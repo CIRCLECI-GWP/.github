@@ -14,7 +14,7 @@ jobs:
           column: To do
           repo-token: ${{ secrets.PROJECT_ADMIN }}
         if: "contains(github.head_ref, 'dependencies')"
-      - uses: CIRCLECI-GWP/github-project-automation-plus@v0.5.11
+      - uses: CIRCLECI-GWP/github-project-automation-plus@v0.5.1
         with:
           project: Maintenance
           column: In progress
