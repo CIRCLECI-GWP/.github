@@ -1,20 +1,15 @@
-name: Add Recently Created Pull Requests to Project Column
-on: [push]
+name: Move assigned pull requests into To do
+
+on:
+  pull_request:
+    types: [opened]
+
 jobs:
-  build:
+  automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-    - name: Handle Repo1
-      uses: subhamX/github-project-bot@v1.0.0
-      with:
-        ACCESS_TOKEN: ${{ secrets.PROJECT_ADMIN }}
-        COLUMN_NAME: To do
-        PROJECT_URL: https://github.com/orgs/CIRCLECI-GWP/projects/1 
-        REPO_URL: https://github.com/CIRCLECI-GWP/my-laravel-api
-    - name: Handle Repo2
-      uses: subhamX/github-project-bot@v1.0.0
-      with:
-        ACCESS_TOKEN: ${{ secrets.PROJECT_ADMIN }}
-        COLUMN_NAME: To do
-        PROJECT_URL: https://github.com/orgs/CIRCLECI-GWP/projects/1 
-        REPO_URL: https://github.com/CIRCLECI-GWP/testing-graphql
+      - uses: alex-page/github-project-automation-plus@v0.3.0
+        with:
+          project: Maintenance
+          column: To do
+          repo-token: ${{ secrets.PROJECT_ADMIN }}
