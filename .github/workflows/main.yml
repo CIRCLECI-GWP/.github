@@ -8,13 +8,13 @@ jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - uses: alex-page/github-project-automation-plus@v0.5.1
+      - uses: CIRCLECI-GWP/github-project-automation-plus@v0.5.11
         with:
           project: Maintenance
           column: To do
           repo-token: ${{ secrets.PROJECT_ADMIN }}
         if: "contains(github.head_ref, 'dependencies')"
-      - uses: alex-page/github-project-automation-plus@v0.5.1
+      - uses: CIRCLECI-GWP/github-project-automation-plus@v0.5.11
         with:
           project: Maintenance
           column: In progress
