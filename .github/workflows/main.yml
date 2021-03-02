@@ -2,7 +2,7 @@ name: Move assigned pull requests into To do
 
 on:
   pull_request:
-    types: [opened]
+    types: [reopened, opened]
 
 jobs:
   automate-project-columns:
@@ -13,3 +13,4 @@ jobs:
           project: Maintenance
           column: To do
           repo-token: ${{ secrets.PROJECT_ADMIN }}
+        if: "contains(github.head_ref, 'dependencies')"
