@@ -19,3 +19,4 @@ jobs:
           project: Maintenance
           column: In progress
           repo-token: ${{ secrets.PROJECT_ADMIN }}
+        if: "contains(github.head_ref, 'bug')"
