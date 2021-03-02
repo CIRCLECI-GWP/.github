@@ -1,14 +1,13 @@
 name: Move assigned pull requests into To do
 
-on:
-  pull_request:
-    types: [opened]
+on: [push]
 
 jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - uses: alex-page/github-project-automation-plus@v0.3.0
+      - uses: alex-page/github-project-automation-plus@v0.5.1
+
         with:
           project: Maintenance
           column: To do
