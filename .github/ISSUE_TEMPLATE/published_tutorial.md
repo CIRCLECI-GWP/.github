@@ -13,3 +13,4 @@ about: (For GWP Editors) Use this if when a tutorial is published.
 - [ ] Update repo description etc.
 - [ ] Passes green on CircleCI
 - [ ] Github action is added
+- [ ] Appropriate main branch (in cases of multiple branches). Here's an [example](https://github.com/CIRCLECI-GWP/db-cleanups)
