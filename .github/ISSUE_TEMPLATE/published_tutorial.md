@@ -12,3 +12,4 @@ about: (For GWP Editors) Use this if when a tutorial is published.
 - [ ] Add application link to **Details** for CD.
 - [ ] Update repo description etc.
 - [ ] Passes green on CircleCI
+- [ ] Github action is added
