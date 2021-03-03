@@ -1,5 +1,0 @@
-{
-    "name": "CircleCI-GWP Organization Workflow for PRs",
-    "description": "Add Recently Created Pull Requests to Project Column.",
-    "iconName": "git-pull-request"
-}

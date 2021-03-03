@@ -1,0 +1,5 @@
+{
+    "name": "CircleCI-GWP Organization Workflow for PRs and/or issues",
+    "description": "Add Recently Created Pull Requests and/or Issues to Project Column.",
+    "iconName": "activity"
+}
