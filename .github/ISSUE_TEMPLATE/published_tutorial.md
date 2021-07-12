@@ -1,6 +1,6 @@
 ---
 name: "🎆 Published tutorial checklist"
-about: (For GWP Editors) Use this if when a tutorial is published.
+about: (For GWP Editors) Use this when a tutorial is published.
 ---
 
 ### Tutorial has been published!
